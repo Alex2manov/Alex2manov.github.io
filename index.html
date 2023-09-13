@@ -23,13 +23,10 @@
         <li><a href="./test2/test3/test3.html">Ссылка двумя уровнями выше</a></li>
         <li><a href="contect.html">Контекстная</a> ссылка</li>
         <li><a href="https://ru.wikipedia.org/wiki/YouTube#%D0%A1%D0%B5%D1%82%D1%8C_%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE%D0%B2">Ссылка на фрагмент страницы стороннего сайта</a></li>
-        <li>Ссылка в прямоугольной и круглой области <img src="итто.jpg" alt="иттосупремаси" usemap="#itto">
-            <map name="itto">
-                <area shape="circle" coords="180,150,120" href="https://www.youtube.com/watch?v=GO4bKbJd_gg" target="_blank" alt="итто">
-            </map>    
-        <img src="шлатт.jpg" alt="шлатт" usemap="#sh">
+        <li>Ссылка в прямоугольной и круглой области 
             <map name="sh">
                 <area shape="rect" coords="220,820,302,268" href="https://www.youtube.com/watch?v=yHHCqJJrVrE" target="_blank" alt="шлатт">
+                <area shape="circle" coords="270,430,190" href="https://www.youtube.com/watch?v=GO4bKbJd_gg" target="_blank" alt="шлатт">
             </map></li>
         <li><a href="#!">Пустой href</a></li>
         <li><a>Ссылка без href</a></li>
@@ -49,7 +46,7 @@
           <input type="text" name="username" placeholder="ФИО" size="18">
         </label></li>
         <li><label>
-            <input type="tel" name="phone"  placeholder="Телефон">
+            <input type="number" name="phone"  placeholder="Телефон">
           </label></li>
         <li><label>
             <input type="email" name="login" placeholder="Email">
@@ -59,7 +56,7 @@
             <input type="date">
           </label></br></li>
         <li><label>
-            <input type="radio" name=sex value="male" />
+            <input type="radio" name=sex value="male" checked />
             Мужской</label>
         <label>
             <input type="radio" name=sex value="female" />
@@ -68,7 +65,7 @@
         <li><label>
             Любимый язык программирования
                 <br>
-                <select>
+                <select name="PL" multiple="multiple">
                     <option value="Pascal">Pascal</option>
                     <option value="C" >C</option>
                     <option value="C++" >C++</option>
